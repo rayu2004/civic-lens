@@ -2,141 +2,574 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling."
+  >
+
   <meta name="author" content="Civic Lens">
 
-<!-- ADD Open Graph Meta for title, description, image, url, type -->
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Civic Lens">
+  <meta
+    property="og:description"
+    content="Independent reporting, investigative journalism, and truth-driven storytelling."
+  >
+  <meta property="og:type" content="website">
 
-<!-- ADD link to stylesheet -->
+  <!-- Replace these two URLs with your published URLs -->
+  <meta
+    property="og:image"
+    content="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/images/civic-lens-social-preview.jpg"
+  >
+  <meta
+    property="og:url"
+    content="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/"
+  >
 
-  <title>Civic Lens</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Civic Lens | Independent Investigative Journalism</title>
 </head>
-<body>
-<!-- ADD semantic and validated HTML -->
-<!-- ADD skip to main content -->
-    <button id="theme-toggle" aria-label="Toggle light/dark mode">
-      <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
-        <g clip-path="url(#a)"><path d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531" fill="#333" fill-rule="evenodd"/></g>
-      </svg>
-    </button>
 
-      Civic Lens
-      <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
-      
-      <nav class="mobile-nav" aria-label="Mobile Navigation">
-        <input type="checkbox" id="menu-toggle" hidden>
-        <label for="menu-toggle" class="menu-button">Menu</label>
+<body>
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
+
+  <header class="site-header">
+    <div class="header-container">
+      <div class="branding">
+        <a class="site-title" href="#" aria-label="Civic Lens home">
+          Civic Lens
+        </a>
+
+        <p class="tagline">
+          See Clearly. Know Deeply. Act Justly.
+        </p>
+      </div>
+
+      <button
+        id="theme-toggle"
+        type="button"
+        aria-label="Switch between light and dark mode"
+        aria-pressed="false"
+      >
+        <svg
+          width="35"
+          height="35"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <defs>
+            <clipPath id="theme-icon-clip">
+              <path d="M18.512 18.512h62.977v62.977H18.512z"/>
+            </clipPath>
+          </defs>
+
+          <g clip-path="url(#theme-icon-clip)">
+            <path
+              d="M65.098 68.164c-9.281 7.727-23.09 7.242-31.797-1.465-8.707-8.703-9.195-22.516-1.465-31.793.746-.898 2.102-.969 2.926-.145l30.473 30.477c.824.824.754 2.18-.137 2.926m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </g>
+        </svg>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <input
+          type="checkbox"
+          id="menu-toggle"
+          class="menu-toggle"
+        >
+
+        <label for="menu-toggle" class="menu-button">
+          <span>Menu</span>
+        </label>
+
         <ul class="menu">
-          <li><a href="#breaking-news">Breaking News</a></li>
-          <li><a href="#featured-aticles">Featured Articles</a></li>
-          <li><a href="#alerts">Alerts</a></li>
-          <li><a href="#social">Social</a></li>
+          <li>
+            <a href="#breaking-news">Breaking News</a>
+          </li>
+
+          <li>
+            <a href="#featured-articles">Featured Articles</a>
+          </li>
+
+          <li>
+            <a href="#alerts">Alerts</a>
+          </li>
+
+          <li>
+            <a href="#social">Social</a>
+          </li>
         </ul>
       </nav>
-      
-      Welcome to Civic Lens
-        We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
-        <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+    </div>
+  </header>
 
-      Breaking News
+  <main id="main-content">
+    <section class="intro content-container" aria-labelledby="welcome-heading">
+      <h1 id="welcome-heading">Welcome to Civic Lens</h1>
 
-        Federal Investigation Launched into Water Mismanagement in the Southwest
-        The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.
-        videos/water-management.mp4
-        
-        Voter Suppression Bill Faces Pushback in State Supreme Court
-        Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.
-        videos/voter-suppression.mp4
-        
-      Featured Articles
-        
-        The Cost of Silence: Whistleblower Stories from Inside Tech Giants
-        Former employees speak out about ethical breaches in data privacy and surveillance.
-        
-        Unequal Justice: How Bail Systems Harm the Poor
-        An investigative series on cash bail and its disproportionate impact.
-        
-        Invisible Work: The Lives of Migrant Caregivers
-        Humanizing the labor that keeps households and economies afloat.
-        
-        Redlined Still: A New Map of Modern-Day Housing Discrimination
-        Data visualization showing systemic inequality in real estate today.
-        
-        Climate Injustice: Who Pays for Pollution?
-        Communities of color bear the brunt of environmental damage.
-        
-        Teaching Under Fire: The Fight for Inclusive Education
-        Teachers navigate book bans, curriculum restrictions, and culture wars.
-        
-        Food Deserts and Corporate Abandonment
-        Why access to nutrition is a zip code lottery.
-        
-        Policing Mental Health: A Broken Response System
-        Examining police interactions with those in crisis.
-        
-        The Disinformation Economy
-        Tracing profit motives behind fake news empires.
-        
-        Facing the Algorithm: AI and Racial Bias
-        The coded inequalities that shape our lives.
-        
-        The Voting Maze
-        A guide to understanding your rights amid changing laws.
-        
-        After the Cameras Leave: Long-Term Crisis Recovery
-        Rebuilding trust and infrastructure in disaster-hit communities.
-        
-        
-      Stay Informed. Stay Empowered.
+      <p>
+        We are an independent news organization dedicated to unbiased
+        reporting, investigative journalism, and truth-driven storytelling.
+        At Civic Lens, our mission is to expose the facts, amplify marginalized
+        voices, and shine light on the systems that shape our society.
+      </p>
+
+      <blockquote>
+        <p>
+          “We don’t follow the narrative. We follow the facts.”
+        </p>
+      </blockquote>
+    </section>
+
+    <section
+      id="breaking-news"
+      class="breaking-news content-container"
+      aria-labelledby="breaking-news-heading"
+    >
+      <h2 id="breaking-news-heading">Breaking News</h2>
+
+      <div class="breaking-news-grid">
+        <article class="breaking-card">
+          <h3>
+            Federal Investigation Launched into Water Mismanagement in the
+            Southwest
+          </h3>
+
+          <p>
+            The Department of Justice has announced a full investigation into
+            decades of water distribution practices affecting tribal lands
+            and rural communities.
+          </p>
+
+          <video controls preload="metadata">
+            <source
+              src="videos/water-management.mp4"
+              type="video/mp4"
+            >
+
+            <track
+              kind="captions"
+              src="captions/water-management-en.vtt"
+              srclang="en"
+              label="English captions"
+              default
+            >
+
+            Your browser does not support HTML video.
+          </video>
+        </article>
+
+        <article class="breaking-card">
+          <h3>
+            Voter Suppression Bill Faces Pushback in State Supreme Court
+          </h3>
+
+          <p>
+            Civil rights advocates argue that the bill disenfranchises
+            thousands of voters and potential voters of color and those in
+            rural areas of the country.
+          </p>
+
+          <video controls preload="metadata">
+            <source
+              src="videos/voter-suppression.mp4"
+              type="video/mp4"
+            >
+
+            <track
+              kind="captions"
+              src="captions/voter-suppression-en.vtt"
+              srclang="en"
+              label="English captions"
+              default
+            >
+
+            Your browser does not support HTML video.
+          </video>
+        </article>
+      </div>
+    </section>
+
+    <section
+      id="featured-articles"
+      class="featured-articles content-container"
+      aria-labelledby="featured-heading"
+    >
+      <h2 id="featured-heading">Featured Articles</h2>
+
+      <div class="article-grid">
+        <article class="article-card">
+          <h3>
+            <a href="#">
+              The Cost of Silence: Whistleblower Stories from Inside Tech Giants
+            </a>
+          </h3>
+
+          <p>
+            Former employees speak out about ethical breaches in data privacy
+            and surveillance.
+          </p>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            <a href="#">
+              Unequal Justice: How Bail Systems Harm the Poor
+            </a>
+          </h3>
+
+          <p>
+            An investigative series on cash bail and its disproportionate
+            impact.
+          </p>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            <a href="#">
+              Invisible Work: The Lives of Migrant Caregivers
+            </a>
+          </h3>
+
+          <p>
+            Humanizing the labor that keeps households and economies afloat.
+          </p>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            <a href="#">
+              Redlined Still: A New Map of Modern-Day Housing Discrimination
+            </a>
+          </h3>
+
+          <p>
+            Data visualization showing systemic inequality in real estate
+            today.
+          </p>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            <a href="#">
+              Climate Injustice: Who Pays for Pollution?
+            </a>
+          </h3>
+
+          <p>
+            Communities of color bear the brunt of environmental damage.
+          </p>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            <a href="#">
+              Teaching Under Fire: The Fight for Inclusive Education
+            </a>
+          </h3>
+
+          <p>
+            Teachers navigate book bans, curriculum restrictions, and culture
+            wars.
+          </p>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            <a href="#">
+              Food Deserts and Corporate Abandonment
+            </a>
+          </h3>
+
+          <p>
+            Why access to nutrition is a zip code lottery.
+          </p>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            <a href="#">
+              Policing Mental Health: A Broken Response System
+            </a>
+          </h3>
+
+          <p>
+            Examining police interactions with those in crisis.
+          </p>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            <a href="#">
+              The Disinformation Economy
+            </a>
+          </h3>
+
+          <p>
+            Tracing profit motives behind fake news empires.
+          </p>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            <a href="#">
+              Facing the Algorithm: AI and Racial Bias
+            </a>
+          </h3>
+
+          <p>
+            The coded inequalities that shape our lives.
+          </p>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            <a href="#">
+              The Voting Maze
+            </a>
+          </h3>
+
+          <p>
+            A guide to understanding your rights amid changing laws.
+          </p>
+        </article>
+
+        <article class="article-card">
+          <h3>
+            <a href="#">
+              After the Cameras Leave: Long-Term Crisis Recovery
+            </a>
+          </h3>
+
+          <p>
+            Rebuilding trust and infrastructure in disaster-hit communities.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section
+      id="alerts"
+      class="alerts content-container"
+      aria-labelledby="alerts-heading"
+    >
+      <h2 id="alerts-heading">Stay Informed. Stay Empowered.</h2>
+
+      <p>
         Receive text messages with the news you want to know.
-        
-        Name
-        
-        Mobile
-        
-        Notification Preferences
-        
-        Breaking News
-        Politics
-        Weather
-        Sports
-        Entertainment
-        World
-        Financial
-        
-        Subscribe
-      
-      Follow Us
-        Twitter/X
-        Instagram
-        YouTube
-        TikTok
-        LinkedIn
-        
+      </p>
+
+      <form
+        class="subscription-form"
+        action="https://wp.zybooks.com/form-viewer.php"
+        method="post"
+      >
+        <div class="contact-fields">
+          <div class="form-field">
+            <label for="name">Name</label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="mobile">Mobile</label>
+
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              autocomplete="tel"
+              inputmode="tel"
+              required
+              aria-describedby="mobile-help"
+            >
+
+            <span id="mobile-help" class="visually-hidden">
+              Enter a telephone number where you can receive text alerts.
+            </span>
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>Notification Preferences</legend>
+
+          <div class="checkbox-grid">
+            <div class="checkbox-field">
+              <input
+                type="checkbox"
+                id="preference-breaking-news"
+                name="preferences[]"
+                value="breaking-news"
+              >
+
+              <label for="preference-breaking-news">
+                Breaking News
+              </label>
+            </div>
+
+            <div class="checkbox-field">
+              <input
+                type="checkbox"
+                id="preference-politics"
+                name="preferences[]"
+                value="politics"
+              >
+
+              <label for="preference-politics">
+                Politics
+              </label>
+            </div>
+
+            <div class="checkbox-field">
+              <input
+                type="checkbox"
+                id="preference-weather"
+                name="preferences[]"
+                value="weather"
+              >
+
+              <label for="preference-weather">
+                Weather
+              </label>
+            </div>
+
+            <div class="checkbox-field">
+              <input
+                type="checkbox"
+                id="preference-sports"
+                name="preferences[]"
+                value="sports"
+              >
+
+              <label for="preference-sports">
+                Sports
+              </label>
+            </div>
+
+            <div class="checkbox-field">
+              <input
+                type="checkbox"
+                id="preference-entertainment"
+                name="preferences[]"
+                value="entertainment"
+              >
+
+              <label for="preference-entertainment">
+                Entertainment
+              </label>
+            </div>
+
+            <div class="checkbox-field">
+              <input
+                type="checkbox"
+                id="preference-world"
+                name="preferences[]"
+                value="world"
+              >
+
+              <label for="preference-world">
+                World
+              </label>
+            </div>
+
+            <div class="checkbox-field">
+              <input
+                type="checkbox"
+                id="preference-financial"
+                name="preferences[]"
+                value="financial"
+              >
+
+              <label for="preference-financial">
+                Financial
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <button class="subscribe-button" type="submit">
+          Subscribe
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="social" class="site-footer">
+    <div class="footer-container">
+      <h2>Follow Us</h2>
+
+      <ul class="social-links">
+        <li>
+          <a href="#" aria-label="Follow Civic Lens on Twitter or X">
+            Twitter/X
+          </a>
+        </li>
+
+        <li>
+          <a href="#" aria-label="Follow Civic Lens on Instagram">
+            Instagram
+          </a>
+        </li>
+
+        <li>
+          <a href="#" aria-label="Follow Civic Lens on YouTube">
+            YouTube
+          </a>
+        </li>
+
+        <li>
+          <a href="#" aria-label="Follow Civic Lens on TikTok">
+            TikTok
+          </a>
+        </li>
+
+        <li>
+          <a href="#" aria-label="Follow Civic Lens on LinkedIn">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+
+      <p class="copyright">
         &copy; 2025 Civic Lens. All rights reserved.
-        
-        
+      </p>
+    </div>
+  </footer>
+
   <script>
-    const toggleButton = document.getElementById('theme-toggle');
-  
-    toggleButton.addEventListener('click', () => {
-      const body = document.body;
-  
-      // Toggle manually between light and dark mode
-      if (body.classList.contains('dark-mode')) {
-        body.classList.remove('dark-mode');
-        body.classList.add('light-mode');
-      } else if (body.classList.contains('light-mode')) {
-        body.classList.remove('light-mode');
-        body.classList.add('dark-mode');
-      } else {
-        // No class set yet, determine system preference
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        body.classList.add(prefersDark ? 'light-mode' : 'dark-mode');
-      }
+    const toggleButton = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggleButton.addEventListener("click", () => {
+      const isCurrentlyDark = body.classList.contains("dark-mode");
+
+      body.classList.toggle("dark-mode", !isCurrentlyDark);
+      body.classList.toggle("light-mode", isCurrentlyDark);
+
+      toggleButton.setAttribute(
+        "aria-pressed",
+        String(!isCurrentlyDark)
+      );
     });
   </script>
 </body>
